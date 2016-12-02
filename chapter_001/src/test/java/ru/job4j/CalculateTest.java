@@ -9,7 +9,7 @@ import static org.junit.Assert.assertThat;
 /**
 * Test.
 *
-* @autor Alexey Tomskih (alexey.tomskih@gmail.com)
+* @author Alexey Tomskih (alexey.tomskih@gmail.com)
 * @version $Id$
 * @since 0.1
 */
