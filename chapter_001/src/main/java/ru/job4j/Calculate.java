@@ -3,7 +3,7 @@ package ru.job4j;
 /**
  * Calculate.
  *
- * @author Petr Arsentev (parsentev@yandex.ru)
+ * @author Alexey Tomskih (alexey.tomskih@gmail.com)
  * @version $Id$
  * @since 0.1
  */
@@ -11,9 +11,10 @@ public class Calculate {
     /**
      * Main.
      *
-     * @param args - args.
+     * @param arg - arg.
      */
-    public static void main(String[] args) {
+    public static void main(String[] arg) {
         System.out.println("Hello, world!");
+
     }
 }
