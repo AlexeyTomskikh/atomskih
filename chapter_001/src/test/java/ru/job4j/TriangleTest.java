@@ -1,11 +1,13 @@
 package ru.job4j;
 
 import org.junit.Test;
+
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.number.IsCloseTo.closeTo;
 
 /**
  * Test.
+ *
  * @author Alexey Tomskih (alexey.tomskih@gmail.com)
  * @version $Id$
  * @since 19.12.2016
@@ -18,12 +20,23 @@ public class TriangleTest {
     @Test
     public void areaTest() {
 
-		Point onePoint = new Point(2, 5);
-		Point twoPoint = new Point(7, 1);
-		Point threePoint = new Point(8, 10);
+        Point onePoint = new Point(2, 5);
+        Point twoPoint = new Point(7, 1);
+        Point threePoint = new Point(8, 10);
         Triangle triangle = new Triangle(onePoint, twoPoint, threePoint);
         assertThat(triangle.area(), closeTo(24.5, 0.01));
     }
+
+    @Test
+    public void areaTest2() {
+
+        Point onePoint = new Point(1, 1);
+        Point twoPoint = new Point(2, 2);
+        Point threePoint = new Point(3, 3);
+        Triangle triangle = new Triangle(onePoint, twoPoint, threePoint);
+        assertThat(triangle.area(), closeTo(-1, 0.01));
+    }
+
     /**
      * Тест метода вычисления расстояния между двумя точками.
      */
@@ -34,4 +47,5 @@ public class TriangleTest {
         Point twoPoint = new Point(7, 1);
         assertThat(onePoint.distanceTo(twoPoint), closeTo(6.4, 0.01));
     }
+
 }

@@ -8,7 +8,6 @@ package ru.job4j;
  * @since 15.12.2016
  */
 public class Triangle {
-
     private Point a;
     private Point b;
     private Point c;
@@ -22,13 +21,14 @@ public class Triangle {
     /**
      * Метод рассчитывает площадь треугольника.
      * Если точки лежат на одной прямой выдаёт ошибку
+     *
      * @return площадь треугольника
      */
     public double area() {
         double result;
         final double EPSILON = 1.0e-10;
         if (Math.abs((a.x - c.x) * (b.y - c.y) - (b.x - c.x) * (a.y - c.y)) <= EPSILON) {
-            throw new Error("Точки лежат на одной прямой");
+            result = -1;
         } else {
             double resultOne = a.distanceTo(b);
             double resultTwo = b.distanceTo(c);
