@@ -7,8 +7,13 @@ package ru.job4j;
  * @version $Id$
  * @since 22.12.2016
  */
+
 public class Max {
     public int maxNumber(int first, int second) {
         return first > second ? first : second;
+    }
+
+    public int maxNumbers(int first, int second, int third) {
+        return maxNumber(first, (maxNumber(second, third)));
     }
 }

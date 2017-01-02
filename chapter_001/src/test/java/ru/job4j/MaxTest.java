@@ -24,4 +24,11 @@ public class MaxTest {
         int result = max.maxNumber(1, 3);
         assertThat(result, is(3));
     }
+    @Test
+    public void max3() throws Exception {
+
+        Max max = new Max();
+        int result = max.maxNumbers(1, 3, 7);
+        assertThat(result, is(7));
+    }
 }
