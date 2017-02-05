@@ -1,8 +1,21 @@
 package ru.job4j;
 
-public class Paint {
+/**
+ * Class Paint решение задачи 4.3. Построить пирамиду в псевдографике.
+ *
+ * @author Alexey Tomskih (alexey.tomskih@gmail.com)
+ * @version $Id$
+ * @since 05.01.2017
+ */
 
-    public String piramid(int h) {
+public class Paint {
+    /**
+     * Метод строит пирамиду заданной высоты.
+     *
+     * @param h высота пирамиды
+     * @return возвращает строку с пирамидой заданой высоты
+     */
+    public String pyramid(int h) {
         StringBuilder line1 = new StringBuilder();
         for (int i = 0; i < h; i++) {
             for (int j = i; j < h; j++) {
